@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stone Paper Scissor</title>
+        <link rel="stylesheet" type="text/css" href="game.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="container">
+        <header>STONE PAPER SCISSOR</header>
+        <div class="Inner">
+            <div class="image">
+                <img src="paper.png" class="hand" height="100px" width="100px" onclick="click_img1()">
+                <img src="rock.png" class="hand" height="100px" width="100px" onclick="click_img2()">
+                <img src="scissors.png" class="hand" height="100px" width="100px" onclick="click_img3()">
+            </div>
+    
+            <div class="result">
+              <img src="" class="resbox" id="resShow1" height="100px" width="100px">  
+              <img src="" class="resbox" id="resShow2" height="100px" width="100px">
+
+              <span id="winner"></span>
+              <h3 id="emoji"></h3>
+              
+            </div>
+            
+            <div class="textBox">
+                <span class="text" id="you">You</span>
+                <span class="text" id="computer">Computer</span>
+
+            </div>
+    
+            <div class="score">
+                <span class="scoretext" id="youScore">YOU: 0/5</span>
+                <span class="scoretext" id="computerScore">COMPUTER: 0/5</span>
+
+                <button type="reset" id="restart" onclick="location.reload()">PLAY AGAIN</button>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
